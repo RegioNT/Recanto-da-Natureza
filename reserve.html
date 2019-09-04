@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Metatags de SEO-->
+    <meta name="keywords" content="Recanto da Natureza">
+    <meta name="description" content="Pousadas reservada, com ótimas tarifas e com confirmação de entrada e de saída">
+    <title>Recanto da Natureza</title>
+    <link rel="stylesheet" href="./CSS/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="navegação">
+            <img src="./img/logo.jpg" alt="Hotel Luxury" id="logo">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Início</a>
+            </li>
+            <li>
+                <a href="hospeg.html">Hospedagem</a>
+            </li>
+            <li>
+                <a href="reserve.html">Reserva</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>Recanto da Natureza</h1>
+
+    <article>
+        <h2>Reserve o seu Quarto</h2>
+    </article>
+    <fieldset>
+        <legend>Preencha o formulário</legend>
+        <form action="/action_page.php">
+            Data de Entrada: <input type="date" name="bday">
+            Data de Saída: <input type="date" name="bday">
+        </form>
+        <form action="">
+            <p>
+                <label for="nome">Nome</label>
+                <input type="name" id="Nome">
+            </p>
+            <p>
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" onBlur="ValidarCPF(form1.cpf);" onKeyPress="MascaraCPF(form1.cpf);"
+                    maxlength="14">
+            </p>
+            <p>
+                <label for="Quartos">Quartos</label>
+                <select id="Quarto">
+                    <option value="um">1</option>
+                    <option value="dois">2</option>
+
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+
+    </fieldset>
+
+    <footer>Princesa, Pelotas - RS</footer>
+
+</body>
+
+</html>
